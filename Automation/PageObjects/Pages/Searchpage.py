@@ -1,6 +1,6 @@
 from Locators import SearchPageLocators
-from functions import fix_price
 from selenium.webdriver.common.action_chains import ActionChains
+from functions import build_items_list
 
 
 class BasePage(object):
@@ -37,11 +37,8 @@ class CheckSize(BasePage):
         hover = ActionChains(self.driver).move_to_element(element)
         hover.click().perform()
 
-    def takeproducts(self, number):
+    def takeproducts(self, numberofitems):
         element_names = self.driver.find_elements(*SearchPageLocators.items_name)
         element_prices = self.driver.find_elements(*SearchPageLocators.items_price)
-        my_items = []
-        for x in range(number):
-            price = fix_price(element_prices[x].text)
-            my_items.append([element_names[x + 1].text, price])
+        my_items = build_items_list(self, element_names, element_prices, numberofitems)
         return my_items

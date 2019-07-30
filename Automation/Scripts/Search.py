@@ -19,6 +19,7 @@ class SearchShoes(unittest.TestCase):
         self.driver.get("https://www.ebay.com/")
 
     def ordershoes(self):
+        number_of_items = 5
         home_page = Homepage.SearchTab(self.driver)
         home_page.writeOnSeachbar()
         home_page.search()
@@ -31,7 +32,7 @@ class SearchShoes(unittest.TestCase):
         print("Total resuts for the search: " + str(results))
         search_page.sortitems()
         time.sleep(5)
-        items = search_page.takeproducts(5)
+        items = search_page.takeproducts(number_of_items)
         print("First 5 items found: " + str(items))
         print(len(items))
         print("Items sorted by name ASC" + str(sort_by_price_asc(items)))

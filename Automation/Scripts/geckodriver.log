@@ -5592,3 +5592,78 @@ JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b010
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564450772291	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Yi7ZVx4sMLAF"
+1564450773391	Marionette	INFO	Listening on port 43573
+1564450773396	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/satelliteLib-4015f254cd3c11b97219ce6c8b668b778bd61dfa.js, line 8: TypeError: n is null
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://s2.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv=618, line 37: NS_ERROR_NOT_INITIALIZED: 
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564450850484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z5OOZwJICTA5"
+1564450851575	Marionette	INFO	Listening on port 39485
+1564450851590	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564450959902	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cW1BxDitln3J"
+1564450960956	Marionette	INFO	Listening on port 36207
+1564450961008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/satelliteLib-4015f254cd3c11b97219ce6c8b668b778bd61dfa.js, line 8: TypeError: n is null
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&Brand=PUMA&_dcat=93427&_sop=15, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+[Parent 13972, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 694
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564451094224	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YCQvDrzTkTEH"
+1564451095386	Marionette	INFO	Listening on port 38767
+1564451095429	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ir.ebaystatic.com/rs/v/daenj4np1ezs3msxgbj3z4t2pu5.js, line 73: TypeError: e is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/satelliteLib-4015f254cd3c11b97219ce6c8b668b778bd61dfa.js, line 8: TypeError: n is null
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&Brand=PUMA&_dcat=93427&_sop=15, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x550027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 14272, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564451523903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hrKAC0NodWw8"
+1564451524955	Marionette	INFO	Listening on port 37053
+1564451525008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/satelliteLib-4015f254cd3c11b97219ce6c8b668b778bd61dfa.js, line 8: TypeError: n is null
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564451684923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zWlgdwxjLqZ7"
+1564451686006	Marionette	INFO	Listening on port 39277
+1564451686027	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/satelliteLib-4015f254cd3c11b97219ce6c8b668b778bd61dfa.js, line 8: TypeError: n is null
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=9&Brand=PUMA&_dcat=93427&_sop=15, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+[Parent 15181, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 694
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

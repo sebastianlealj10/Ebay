@@ -18,3 +18,11 @@ def sort_by_price_desc(sub_li):
 
 def sort_by_name_desc(sub_li):
     return sorted(sub_li, key=lambda x: x[0])
+
+
+def build_items_list(self, items_name, items_price, items_number):
+    items = []
+    for x in range(items_number):
+        price = fix_price(items_price[x].text)
+        items.append([items_name[x + 1].text, price])
+    return items
