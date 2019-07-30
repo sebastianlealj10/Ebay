@@ -5,7 +5,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Automation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Automation/PageObjects" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Automation/Scripts" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <sourceFolder url="file://$MODULE_DIR$/Automation/PageObjects/Pages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/bin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/include" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/lib64" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

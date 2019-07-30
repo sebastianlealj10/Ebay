@@ -18,7 +18,7 @@ class SearchShoes(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get("https://www.ebay.com/")
 
-    def ordershoes(self):
+    def test_order_shoes(self):
         number_of_items = 5
         home_page = Homepage.SearchTab(self.driver)
         home_page.writeOnSeachbar()
@@ -35,8 +35,8 @@ class SearchShoes(unittest.TestCase):
         items = search_page.takeproducts(number_of_items)
         print("First 5 items found: " + str(items))
         print(len(items))
-        print("Items sorted by name ASC" + str(sort_by_price_asc(items)))
-        print("Items sorted by price DESC" + str(sort_by_price_desc(items)))
+        print("Items sorted by name ASC" + str(sort_by_price_desc(items)))
+        print("Items sorted by price DESC" + str(sort_by_name_desc(items)))
         self.assertListEqual(items, sort_by_price_asc(items),
                              msg="Items are not sorted correctly")
 
@@ -47,7 +47,7 @@ class SearchShoes(unittest.TestCase):
 
 def suite():
     suite = unittest.TestSuite()
-    suite.addTest(SearchShoes('ordershoes'))
+    suite.addTest(SearchShoes('test_order_shoes'))
     return suite
 
 
