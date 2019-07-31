@@ -283,7 +283,7 @@ class SearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Firefox("/usr/local/bin")
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
         self.driver.get("https://www.ebay.com/")

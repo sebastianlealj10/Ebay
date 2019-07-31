@@ -6288,3 +6288,105 @@ console.log: Accessibility service init or shutdown observer does not exist.
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564591499871	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.rrL9H0bDfLTP"
+1564591500858	Marionette	INFO	Listening on port 36039
+1564591500879	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/satelliteLib-4015f254cd3c11b97219ce6c8b668b778bd61dfa.js, line 8: TypeError: n is null
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&Brand=PUMA&_dcat=93427&_sop=15, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+[Child 11341, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 694
+[Child 11341, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 694
+[Child 11341, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 694
+[Child 11341, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 694
+[Parent 11289, Gecko_IOThread] WARNING: pipe error (89): Connection reset by peer: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564591966647	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MfF73xMfFiJP"
+1564591967580	Marionette	INFO	Listening on port 39783
+1564591967652	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&Brand=PUMA&_dcat=93427&_sop=15, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://assets.adobedtm.com/d666b72077d3e9ab07d9cb850cfc69b0100746ff/dil-contents-85c556f6d017ca50d37b42a74e7bff9375001fff.js, line 48: TypeError: h is null
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 12019, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2D00AF,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
