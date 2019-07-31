@@ -10,9 +10,9 @@ class BasePage(object):
         self.driver = driver
 
 
-class CheckSize(BasePage):
+class SortItems(BasePage):
 
-    def checksize10(self):
+    def checksize(self):
         element = self.driver.find_element(*SearchPageLocators.select_size_10)
         element.click()
 
