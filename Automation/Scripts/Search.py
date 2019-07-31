@@ -2,7 +2,7 @@ import unittest
 import time
 import sys
 import os
-from pathlib import Path
+from selenium.webdriver.firefox.options import Options
 
 dir_path = os.path.abspath(__file__ + "/../../..")
 print(dir_path)
@@ -286,7 +286,9 @@ class SearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-
+        options = Options()
+        options.headless = True
+        driver = webdriver.Firefox(options=options)
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
