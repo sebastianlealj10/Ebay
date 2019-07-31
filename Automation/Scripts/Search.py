@@ -286,10 +286,7 @@ class SearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-        options = Options()
-        options.headless = True
-        self.driver = webdriver.Firefox(options=options)
-        self.driver = webdriver.Firefox()
+
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
