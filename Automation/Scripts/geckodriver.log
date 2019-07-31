@@ -1,0 +1,69 @@
+1564603610943	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7yGoGoKfTjj0"
+*** You are running in headless mode.
+1564603611821	Marionette	INFO	Listening on port 44639
+1564603611851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564603611909	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ET5gbPWFOOfx"
+1564603612920	Marionette	INFO	Listening on port 41955
+1564603613014	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564603613082	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bqxIZ2n4FyVf"
+1564603614167	Marionette	INFO	Listening on port 44137
+1564603614186	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1564603661129	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.L0tGmpkKifQp"
+*** You are running in headless mode.
+1564603662029	Marionette	INFO	Listening on port 41631
+1564603662039	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564603662098	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.P1wj0J3Ynz6R"
+1564603663119	Marionette	INFO	Listening on port 36257
+1564603663201	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564603663249	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xHVCd3NXFB5Z"
+1564603664270	Marionette	INFO	Listening on port 33499
+1564603664352	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shoes&_sacat=0, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&rt=nc&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=Shoes&_sacat=0&US%2520Shoe%2520Size%2520%2528Men%2527s%2529=10&rt=nc&Brand=PUMA&_dcat=93427, line 1: TypeError: The expression cannot be converted to return the specified type.
+console.log: Accessibility service init or shutdown observer does not exist.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x550027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 24113, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-esr-Jz2l5x/firefox-esr-60.8.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 342
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

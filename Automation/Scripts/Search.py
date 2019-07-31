@@ -279,12 +279,17 @@ from functions import sort_by_price_asc
 from functions import sort_by_price_desc
 from functions import sort_by_name_asc
 from functions import print_results
+from selenium.webdriver.firefox.options import Options
 
 
 class SearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
+        options = Options()
+        options.headless = True
+        self.driver = webdriver.Firefox(options=options)
+        self.driver = webdriver.Firefox()
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
