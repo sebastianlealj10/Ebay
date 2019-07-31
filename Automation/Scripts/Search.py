@@ -288,8 +288,7 @@ class SearchShoes(unittest.TestCase):
         # create a new Firefox session
         options = Options()
         options.headless = True
-        driver = webdriver.Firefox(options=options)
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Firefox(options=options)
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
         self.driver.get("https://www.ebay.com/")
