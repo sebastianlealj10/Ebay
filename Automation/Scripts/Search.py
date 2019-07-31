@@ -10,6 +10,7 @@ print('Python %s on %s' % (sys.version, sys.platform))
 sys.path.extend([dir_path,
                  dir_path + '/Automation',
                  dir_path + '/Automation''/PageObjects',
+                 dir_path + '/Automation''/drivers',
                  dir_path + '/Automation/Scripts',
                  dir_path + '/Automation/PageObjects/Pages',
                  dir_path + '/venv',
@@ -283,7 +284,7 @@ class SearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-        self.driver = webdriver.Firefox(dir_path + '/Automation/Scripts')
+        self.driver = webdriver.Firefox(dir_path + '/Automation/drivers')
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
         self.driver.get("https://www.ebay.com/")
