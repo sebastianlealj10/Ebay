@@ -7,7 +7,7 @@ class HomePageLocators(object):
 
 
 class SearchPageLocators(object):
-    select_size_10 = (By.CSS_SELECTOR, "input[aria-label='9']")
+    select_size_10 = (By.CSS_SELECTOR, "input[aria-label='10']")
     search_brand = (By.CSS_SELECTOR, ".x-searchable-list__textbox__aspect-Brand")
     select_puma = (By.CSS_SELECTOR, "input[aria-label='PUMA']")
     results_number = (By.CSS_SELECTOR, ".srp-controls__count-heading")

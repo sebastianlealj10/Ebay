@@ -1,34 +1,245 @@
 import unittest
 import time
 import sys
+import os
 
-sys.path.extend(['/home/sebas/PycharmProjects/Ebay', '/home/sebas/PycharmProjects/Ebay/Automation', '/home/sebas'
-                                                                                                    '/PycharmProjects'
-                                                                                                    '/Ebay/Automation'
-                                                                                                    '/PageObjects',
-                 '/home/sebas/PycharmProjects/Ebay/Automation/Scripts',
-                 '/home/sebas/PycharmProjects/Ebay/Automation/PageObjects/Pages',
-                 '/home/sebas/PycharmProjects/Ebay/venv', '/home/sebas/PycharmProjects/Ebay/venv/bin',
-                 '/home/sebas/PycharmProjects/Ebay/venv/include', '/home/sebas/PycharmProjects/Ebay/venv/lib',
-                 '/home/sebas/PycharmProjects/Ebay/venv/lib64'])
+dir_path = os.path.abspath(__file__ + "/../../../../")
+print(dir_path)
+
+print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend([dir_path + '/Ebay', dir_path + '/Ebay/Automation', '/home/sebas'
+                                                                    '/PycharmProjects'
+                                                                    '/Ebay/Automation'
+                                                                    '/PageObjects',
+                 dir_path + '/Ebay/Automation/Scripts',
+                 dir_path + '/Ebay/Automation/PageObjects/Pages',
+                 dir_path + '/Ebay/venv', dir_path + '/Ebay/venv/bin',
+                 dir_path + '/Ebay/venv/include', dir_path + '/Ebay/venv/lib',
+                 dir_path + '/Ebay/venv/lib64', dir_path + '/Ebay/.idea',
+                 dir_path + '/Ebay/.idea/inspectionProfiles',
+                 dir_path + '/Ebay/venv/lib/python3.7',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/config-0.4.2-py3.7.egg-info',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/EGG-INFO',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7'
+                                                     '.egg/pip/_internal/cli',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal/commands', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3'
+                                                              '-py3.7.egg/pip/_internal/models',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal/operations', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0'
+                                                                '.3-py3.7.egg/pip/_internal/req',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal/utils', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3'
+                                                           '-py3.7.egg/pip/_internal/vcs',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                                           '/_vendor/cachecontrol',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/cachecontrol/caches', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0'
+                                                               '.3-py3.7.egg/pip/_vendor/certifi',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/chardet', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg'
+                                                   '/pip/_vendor/chardet/cli',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/colorama', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg'
+                                                    '/pip/_vendor/distlib',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/distlib/_backport', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3'
+                                                             '-py3.7.egg/pip/_vendor/html5lib',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/html5lib/_trie', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3'
+                                                          '.7.egg/pip/_vendor/html5lib/filters',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/html5lib/treeadapters',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/html5lib/treebuilders',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/html5lib/treewalkers', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0'
+                                                                '.3-py3.7.egg/pip/_vendor/idna',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/lockfile', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg'
+                                                    '/pip/_vendor/msgpack',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/packaging', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7'
+                                                     '.egg/pip/_vendor/pep517',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/pkg_resources', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3'
+                                                         '.7.egg/pip/_vendor/progress',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/pytoml', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg'
+                                                  '/pip/_vendor/requests',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/urllib3', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg'
+                                                   '/pip/_vendor/urllib3/contrib',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/urllib3/contrib/_securetransport',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/urllib3/packages', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3'
+                                                            '-py3.7.egg/pip/_vendor/urllib3/packages/backports',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/urllib3/packages/ssl_match_hostname',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor'
+                            '/urllib3/util', dir_path + '/Ebay/venv/lib/python3.7/site-packages/pip-19.0.3-py3.7'
+                                                        '.egg/pip/_vendor/webencodings',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/common',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/android',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/blackberry',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/chrome',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/common',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/common/actions'
+                            '', dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/common'
+                                           '/html5',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver'
+                            '/edge', dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium'
+                                                '/webdriver/firefox',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/firefox/amd64'
+                            '', dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/firefox'
+                                           '/x86',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/ie'
+                            '', dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium'
+                                           '/webdriver/opera',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/phantomjs',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/remote',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/safari',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/support',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium/webdriver/webkitgtk',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/selenium-3.141.0.dist-info',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3/contrib',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3/contrib/_securetransport'
+                            '', dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3/packages',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3/packages/backports',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3/packages/rfc3986',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3/packages'
+                            '/ssl_match_hostname', dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3'
+                                                              '/util',
+                 dir_path + '/Ebay/venv/lib/python3.7/site-packages/urllib3-1.25.3.dist-info',
+                 dir_path + '/Ebay/venv/lib64/python3.7',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/config-0.4.2-py3.7.egg-info',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/EGG-INFO',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7'
+                                                     '.egg/pip/_internal/cli',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal/commands', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0'
+                                                              '.3-py3.7.egg/pip/_internal/models',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal/operations', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19'
+                                                                '.0.3-py3.7.egg/pip/_internal/req',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_internal/utils', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                           '-py3.7.egg/pip/_internal/vcs',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7'
+                                                   '.egg/pip/_vendor/cachecontrol',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/cachecontrol/caches',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/certifi', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                           '-py3.7.egg/pip/_vendor/chardet',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/chardet/cli', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19'
+                                                               '.0.3-py3.7.egg/pip/_vendor/colorama',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/distlib', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                           '-py3.7.egg/pip/_vendor/distlib/_backport',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/html5lib', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                            '-py3.7.egg/pip/_vendor/html5lib/_trie',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/html5lib/filters',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/html5lib/treeadapters',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/html5lib/treebuilders',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/html5lib/treewalkers',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/idna', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3'
+                                                        '.7.egg/pip/_vendor/lockfile',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/msgpack', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                           '-py3.7.egg/pip/_vendor/packaging',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/pep517', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                          '-py3.7.egg/pip/_vendor/pkg_resources',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/progress', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                            '-py3.7.egg/pip/_vendor/pytoml',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/requests', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3'
+                                                            '-py3.7.egg/pip/_vendor/urllib3',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/urllib3/contrib',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/urllib3/contrib/_securetransport',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/urllib3/packages',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/urllib3/packages/backports',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/urllib3/packages/ssl_match_hostname',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip'
+                            '/_vendor/urllib3/util', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/pip-19'
+                                                                '.0.3-py3.7.egg/pip/_vendor/webencodings',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/common',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/android',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/blackberry',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/common',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/chrome',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/common'
+                            '/actions', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver'
+                                                   '/common/html5',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/edge',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/firefox',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/firefox'
+                            '/amd64', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver'
+                                                 '/firefox/x86',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/ie',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/opera',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/phantomjs',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/remote',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/safari',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/support',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium/webdriver/webkitgtk',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/selenium-3.141.0.dist-info',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3/contrib'
+                            '/_securetransport', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3'
+                                                            '/contrib',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3/packages',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3/packages/backports',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3/packages/rfc3986',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3/packages'
+                            '/ssl_match_hostname', dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3'
+                                                              '/util',
+                 dir_path + '/Ebay/venv/lib64/python3.7/site-packages/urllib3-1.25.3.dist-info'])
 
 from selenium import webdriver
 from Pages import Homepage
 from Pages import Searchpage
 from functions import sort_by_price_asc
 from functions import sort_by_price_desc
-from functions import sort_by_name_desc
-
-import sys;
-
-print('Python %s on %s' % (sys.version, sys.platform))
+from functions import sort_by_name_asc
+from functions import print_results
 
 
 class SearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Firefox(dir_path + '/Ebay/Automation/Scripts')
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
         self.driver.get("https://www.ebay.com/")
@@ -45,12 +256,13 @@ class SearchShoes(unittest.TestCase):
         search_page.selectbrandpuma()
         results = search_page.resultsnumber()
         print("Total resuts for the search: " + str(results))
+        print("........................................................................................\n")
         search_page.sortitems()
         time.sleep(5)
         items = search_page.takeproducts(number_of_items)
-        print("First 5 items found: " + str(items))
-        print("Items sorted by name ASC" + str(sort_by_price_desc(items)))
-        print("Items sorted by price DESC" + str(sort_by_name_desc(items)))
+        print_results(items, "First five results")
+        print_results(sort_by_name_asc(items), "Items sorted by name ASC")
+        print_results(sort_by_price_desc(items), "Items sorted by price DESC")
         self.assertListEqual(items, sort_by_price_asc(items),
                              msg="Items are not sorted correctly")
 
