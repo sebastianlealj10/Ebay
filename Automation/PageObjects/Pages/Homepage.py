@@ -10,11 +10,12 @@ class BasePage(object):
 
 class SearchTab(BasePage):
 
-    def writeOnSeachbar(self):
-        element = self.driver.find_element(*HomePageLocators.search_bar)
+    def check_page_loaded(self):
+        return True if self.driver.find_element(*HomePageLocators.LOGO) else False
+
+    def search_shoes(self):
+        element = self.driver.find_element(*HomePageLocators.SEARCH_BAR)
         element.clear()
         element.send_keys("Shoes")
-
-    def search(self):
-        element = self.driver.find_element(*HomePageLocators.search_button)
+        element = self.driver.find_element(*HomePageLocators.SEARCH_BUTTON)
         element.click()

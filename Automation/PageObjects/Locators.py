@@ -2,11 +2,13 @@ from selenium.webdriver.common.by import By
 
 
 class HomePageLocators(object):
-    search_bar = (By.ID, 'gh-ac')
-    search_button = (By.ID, 'gh-btn')
+    LOGO = (By.ID, 'gh-logo')
+    SEARCH_BAR = (By.ID, 'gh-ac')
+    SEARCH_BUTTON = (By.ID, 'gh-btn')
 
 
 class SearchPageLocators(object):
+    PRICE_NAV = (By.ID, 'srp-river-main')
     select_size_10 = (By.CSS_SELECTOR, "input[aria-label='10']")
     search_brand = (By.CSS_SELECTOR, ".x-searchable-list__textbox__aspect-Brand")
     select_puma = (By.CSS_SELECTOR, "input[aria-label='PUMA']")

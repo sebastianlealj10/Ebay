@@ -12,6 +12,9 @@ class BasePage(object):
 
 class SortItems(BasePage):
 
+    def check_page_loaded(self):
+        return True if self.driver.find_element(*SearchPageLocators.PRICE_NAV) else False
+
     def checksize(self):
         element = self.driver.find_element(*SearchPageLocators.select_size_10)
         element.click()
@@ -22,6 +25,15 @@ class SortItems(BasePage):
         element.send_keys("Puma")
 
     def selectbrandpuma(self):
+        element = self.driver.find_element(*SearchPageLocators.select_puma)
+        element.click()
+
+    def pick_ten_size_puma(self):
+        element = self.driver.find_element(*SearchPageLocators.select_size_10)
+        element.click()
+        element = self.driver.find_element(*SearchPageLocators.search_brand)
+        element.clear()
+        element.send_keys("Puma")
         element = self.driver.find_element(*SearchPageLocators.select_puma)
         element.click()
 

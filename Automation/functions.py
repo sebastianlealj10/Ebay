@@ -29,6 +29,7 @@ def build_items_list(self, items_name, items_price, items_number):
 
 
 def print_results(list, msg):
+    print("\n")
     print(msg)
     print("\n")
     for x in range(len(list)):

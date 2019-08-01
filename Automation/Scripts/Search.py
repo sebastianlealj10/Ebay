@@ -2,7 +2,6 @@ import unittest
 import time
 import sys
 import os
-from selenium.webdriver.firefox.options import Options
 
 dir_path = os.path.abspath(__file__ + "/../../..")
 print(dir_path)
@@ -273,42 +272,54 @@ sys.path.extend([dir_path,
                  dir_path + '/venv/lib64/python3.7/site-packages/urllib3-1.25.3.dist-info'])
 
 from selenium import webdriver
-from Pages import Homepage
-from Pages import Searchpage
-from functions import sort_by_price_asc
-from functions import sort_by_price_desc
-from functions import sort_by_name_asc
-from functions import print_results
-from selenium.webdriver.firefox.options import Options
+from functions import *
+from Homepage import SearchTab
+from Searchpage import SortItems
 
 
-class SearchShoes(unittest.TestCase):
+class TestSearchShoes(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-        options = Options()
-        options.headless = True
-        self.driver = webdriver.Firefox(options=options)
+        self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
         self.driver.get("https://www.ebay.com/")
 
-    def test_order_shoes(self):
-        number_of_items = 5
-        home_page = Homepage.SearchTab(self.driver)
-        home_page.writeOnSeachbar()
-        home_page.search()
-        search_page = Searchpage.SortItems(self.driver)
-        search_page.searchbrand()
-        search_page.checksize()
-        time.sleep(5)
-        search_page.selectbrandpuma()
+    def test_home_page_load(self):
+        home_page = SearchTab(self.driver)
+        self.assertTrue(home_page.check_page_loaded())
+
+    def test_home_search(self):
+        home_page = SearchTab(self.driver)
+        home_page.search_shoes()
+
+    def test_search_page_load(self):
+        home_page = SearchTab(self.driver)
+        home_page.search_shoes()
+        search_page = SortItems(self.driver)
+        self.assertTrue(search_page.check_page_loaded())
+
+    def test_pick_brand_and_size(self):
+        home_page = SearchTab(self.driver)
+        home_page.search_shoes()
+        search_page = SortItems(self.driver)
+        search_page.pick_ten_size_puma()
         results = search_page.resultsnumber()
+        time.sleep(2)
         print("Total resuts for the search: " + str(results))
         print("........................................................................................\n")
+
+    def test_sort_items_asc(self):
+        home_page = SearchTab(self.driver)
+        home_page.search_shoes()
+        search_page = SortItems(self.driver)
+        search_page.pick_ten_size_puma()
         search_page.sortitems()
         time.sleep(5)
+        number_of_items = 5
         items = search_page.takeproducts(number_of_items)
+
         print_results(items, "First five results")
         print_results(sort_by_name_asc(items), "Items sorted by name ASC")
         print_results(sort_by_price_desc(items), "Items sorted by price DESC")
@@ -320,12 +331,8 @@ class SearchShoes(unittest.TestCase):
         self.driver.quit()
 
 
-def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(SearchShoes('test_order_shoes'))
-    return suite
-
-
-if __name__ == '__main__':
-    runner = unittest.TextTestRunner()
-    runner.run(suite())
+if __name__ == "__main__":
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestSearchShoes)
+    # suite = unittest.TestSuite()
+    # suite.addTest(TestSearchShoes('test_sort_items_asc'))
+    unittest.TextTestRunner(verbosity=2).run(suite)
