@@ -33,27 +33,37 @@ class SortItems(BasePage):
         element = self.driver.find_element(*SearchPageLocators.RESULTS_NUMBER)
         return element.text
 
-    def pick_ten_size_puma(self):
-        element = self.driver.find_element(*SearchPageLocators.SELECT_SIZE_TEN)
-        element.click()
-        element = self.driver.find_element(*SearchPageLocators.SELECT_BRAND)
-        element.clear()
-        element.send_keys("Puma")
-        element = self.driver.find_element(*SearchPageLocators.SELECT_PUMA)
-        element.click()
-
-    def sort_items(self):
-        time.sleep(5)
+    def sort_list(self):
         element = self.driver.find_element(*SearchPageLocators.SORT_BUTTON)
         hover = ActionChains(self.driver).move_to_element(element)
         hover.perform()
+
+    def pick_sort_list(self):
         element = self.driver.find_element(*SearchPageLocators.CHECK_LOWEST_FIRST)
         hover = ActionChains(self.driver).move_to_element(element)
         hover.click().perform()
+
+    def pick_element_names(self):
+        names = self.driver.find_elements(*SearchPageLocators.ITEMS_NAME)
+        return names
+
+    def pick_element_prices(self):
+        prices = self.driver.find_elements(*SearchPageLocators.ITEMS_PRICE)
+        return prices
+
+    def pick_ten_size_puma(self):
+        self.check_size()
+        self.search_brand()
+        self.select_brand_puma()
+
+    def sort_items(self):
+        time.sleep(5)
+        self.sort_list()
+        self.pick_sort_list()
         time.sleep(2)
 
     def take_products(self, number_of_items):
-        element_names = self.driver.find_elements(*SearchPageLocators.ITEMS_NAME)
-        element_prices = self.driver.find_elements(*SearchPageLocators.ITEMS_PRICE)
+        element_names = self.pick_element_names()
+        element_prices = self.pick_element_prices()
         my_items = build_items_list(self, element_names, element_prices, number_of_items)
         return my_items
